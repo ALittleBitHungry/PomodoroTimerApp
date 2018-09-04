@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="app">
+        <h1>Pomodoro Timer</h1>
+        <div class="app-wrapper">
+            <nav class="app-navigation row">
+                <a class="navigation-item settings">
+                    <div class="navigation-item-fill"></div>
+                </a>
+                <a class="navigation-item statistics"></a>
+            <section class="settings active">
+                <div class="settings-slider">
+                    <div class="slider-handle"></div>
+                </div>
+            </section>
+                
+            </nav>
+            <main class="app-main">
+                <div class="main-mode row">
+                    <a class="mode-button left"></a>
+                    <div class="mode-current">
+                        <div class="current-mode work">Work</div>
+                    </div>
+                    <a class="mode-button right"></a>
+                </div>
+                <div class="main-timer">
+                    <time class="timer-current"></time>
+                    <div class="timer-progress"></div>
+                </div>
+                <div class="main-controls row">
+                    <a class="control play"></a>
+                    <a class="control pause"></a>
+                    <a class="control restart"></a>
+                    <a class="control stop"></a>
+                </div>
+
+                <a class="control start" id="start-timer">Start timer</a>
+            </main>
+        </div>
+    </section>
+<script src="main.js"></script>    
+</body>
+</html>
